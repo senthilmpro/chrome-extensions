@@ -6,6 +6,7 @@
  -->
 <html>
   <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <title>Getting Started Extension's Popup</title>
     <style>
       body {
@@ -17,7 +18,8 @@
         white-space: pre;
         text-overflow: ellipsis;
         overflow: hidden;
-        max-width: 400px;
+        min-width: 600px;
+        max-width: 800px;
       }
     </style>
 
@@ -27,11 +29,12 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    <script src="popup.js"></script>
+    <script src="image.js"></script>
   </head>
   <body>
     <div id="status"></div>
-    <img id="image-result" hidden>
+    <div id="meta-tag"> </div>
+    <div id="message"> Injecting Script </div>
   </body>
 </html>
 
